@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AcceptcardPayment">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="PAYMENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:text="CREDIT CARD NUMBER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <morxander.editcard.EditCard
+                android:paddingLeft="5dp"
+                android:background="@drawable/ed_border"
+                android:id="@+id/card_number_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:textAllCaps="true"
+                android:text="expiration MONTH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:textAllCaps="true"
+                android:text="expiration YEAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:text="CVV ?"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:nextFocusDown="@+id/zip_code_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:paddingLeft="5dp"
+                android:id="@+id/date_month_view"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusDown="@+id/date_year_view"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:paddingLeft="5dp"
+                android:id="@+id/date_year_view"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusForward="@+id/security_code_view"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <EditText
+                android:paddingLeft="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="4"
+                android:nextFocusDown="@+id/nameOnthecard"
+                android:id="@+id/security_code_view"
+                android:layout_weight="1"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <!-- <LinearLayout
+             android:orientation="vertical"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginLeft="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:textColor="@android:color/black"
+                 android:textStyle="bold"
+                 android:layout_weight="1"
+                 android:paddingTop="12dp"
+                 android:text="NAME ON THE CARD"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+             <EditText
+                 android:id="@+id/nameOnthecard"
+                 android:background="@drawable/ed_border"
+                 android:layout_marginTop="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" />
+
+
+         </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/termsAndConditionLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/acceptCheckBox"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="CheckBox" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/termsAndConditionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="AGREE TO OUR TERMS AND CONDITION"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:gravity="end"
+                        android:text="I agree that i have read and accepted our terms and conditions for your purchase "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/button_checkout_order"
+                android:textColor="@android:color/white"
+                android:text="FINISH YOUR ORDER"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <!--<include layout="@layout/layout_response_token"></include>-->
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

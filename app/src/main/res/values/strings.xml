@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Bespokino</string>
+    <string name="internet_connected">Internet connected !</string>
+    <string name="no_internet_connected">No Internet connected !</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="newSize">CREATE STANDERD SIZE</string>
+    <string name="smartSizeDesc">Our finely-tuned sizing algorithm 11 quick questions to determine your custome size</string>
+    <string name="measingToolDesc">Bespokinos patend measuring tool guarantees you the perfect fit on your custome button down shirts ordered online</string>
+    <string name="values">HEIGHT</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="facebook_app_id">185835588680215</string>
+    <string name="fb_login_protocol_scheme">fb185835588680215</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="height">
+        <item>HEIGHT</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>WEIGHT</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string-array name="shirtsize">
+        <item>SHIRT SIZE</item>
+        <item>14 1/2</item>
+        <item>15</item>
+        <item>15 1/2</item>
+        <item>16</item>
+        <item>16 1/2</item>
+        <item>17</item>
+        <item>17 1/2</item>
+        <item>18</item>
+
+    </string-array>
+    <string-array name="shirtfit">
+        <item>SHIRT FIT</item>
+        <item>14 1/2</item>
+        <item>15</item>
+        <item>15 1/2</item>
+        <item>16</item>
+        <item>16 1/2</item>
+        <item>17</item>
+        <item>17 1/2</item>
+        <item>18</item>
+
+    </string-array>
+    <string-array name="pantwaistsize">
+        <item>PANT WAIST SIZE</item>
+        <item>14 1/2</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="howitwroks">
+        <item>1.Sign up and create a Bespokino profile. Request a shirt to be sent to your address (When you register for your measuring shirt we will charge your credit card a deposit for $20 and we will refund your $20 when you ship your measuring shirt back).   </item>
+        <item>2. Once you receive your shirt in the mail, put it on and adjust it comfortably to your body.
+ </item>
+        <item>3. Log back onto your Bespokino profile and update your measurements from your shirt results (color-coded buttons). Your measurements will be saved on file for future orders.
+</item>
+        <item>4. Customize your shirts using the 3d shirt visualizer. You will have many customization fabrics and options to choose from.
+</item>
+        <item>5. Place your order and receive your shirts in up to 4 weeks.</item>
+
+    </string-array>
+
+
+    <!-- Accept Related Payment -->
+    <string name="button_text_token">FETCH TOKEN</string>
+    <string name="invalid_card_number">Invalid Card Number</string>
+    <string name="invalid_month">Invalid Month</string>
+    <string name="two_digit_month">Two Digit Month Required</string>
+    <string name="invalid_year">Invalid Year</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="invalid_zipcode">Invalid Zipcode</string>
+    <string name="error">Error</string>
+    <string name="code">"Code: "</string>
+    <string name="message">"Message: "</string>
+    <string name="extra_message">"Extra Message: "</string>
+    <string name="data_descriptor">"Data Descriptor :  "</string>
+    <string name="data_value">"Data Value:  "</string>
+    <string name="decision">"Decision: "</string>
+    <string name="token">"Token"</string>
+    <string name="cvv">CVV</string>
+    <string name="card_number">Card Number</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="progress_message">Processing your paymnet...</string>
+    <string name="progress_title">Please Wait</string>
+
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <string-array name="pant_waist">
+        <item>SELECT YOUR PAINT WAIST SAIZE</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+
+    </string-array>
+
+    <string name="country_prompt">SELECT YOUR MEASURING SIZE</string>
+    <string-array name="model">
+        <item>SELECT YOUR MEASURING SIZE</item>
+        <item>SIZE 1</item>
+        <item>SIZE 2</item>
+        <item>SIZE 3</item>
+        <item>SIZE 4</item>
+        <item>SIZE 5</item>
+        <item>SIZE 6</item>
+        <item>SIZE 7</item>
+        <item>SIZE 8</item>
+        <item>SIZE 9</item>
+        <item>SIZE 10</item>
+        <item>SIZE 11</item>
+        <item>SIZE 12</item>
+        <item>SIZE 13</item>
+        <item>SIZE 14</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>MONTH</item>
+        <item>01 - Jan</item>
+        <item>02 - Feb</item>
+        <item>03 - Mar</item>
+        <item>04 - Apr</item>
+        <item>05 - May</item>
+        <item>06 - Jun</item>
+        <item>07 - Jul</item>
+        <item>08 - Aug</item>
+        <item>09 - Sep</item>
+        <item>10 - Oct</item>
+        <item>11 - Nov</item>
+        <item>12 - Dec</item>
+
+    </string-array>
+
+
+    <string-array name="year">
+        <item>YEAR</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+
+    </string-array>
+
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="passworderror">Enter Some Password</string>
+    <string name="mobileerror">Enter Cell number</string>
+    <string name="posture_header">Tell us about your body posture to the best of your ability inorder to make a perfect fit for you</string>
+
+</resources>

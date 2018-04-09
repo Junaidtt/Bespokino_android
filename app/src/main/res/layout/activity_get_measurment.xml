@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:id="@+id/stepper_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:stpi_circleStrokeWidth="1dp"
+        app:stpi_lineStrokeWidth="1dp"
+        app:stpi_showStepNumberInstead="true"
+        app:stpi_lineDoneColor="@android:color/darker_gray"
+        app:stpi_lineColor="@android:color/holo_red_light"
+        app:stpi_indicatorColor="@android:color/black"
+        app:stpi_circleColor="@color/colorPrimary"
+        app:stpi_stepCount="10"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_weight="1"
+        android:layout_gravity=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+</LinearLayout>

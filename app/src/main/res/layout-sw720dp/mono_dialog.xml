@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MonogramActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/bottomLayout">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:paddingTop="10dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="MONOGRAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:paddingTop="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal"
+                    android:text="Enter your name or initials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="textCapCharacters"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:maxLength="8"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/edMonogram"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/ed_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+                <LinearLayout
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:id="@+id/imageButton1"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/textView2"
+                            android:adjustViewBounds="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/initials1"
+                            android:scaleType="center" />
+                        <ImageButton
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:id="@+id/imageButton2"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/textView2"
+                            android:adjustViewBounds="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/initials2"
+                            android:scaleType="center" />
+                        <ImageButton
+                            android:layout_weight="0.90"
+                            android:id="@+id/imageButton3"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/textView2"
+                            android:adjustViewBounds="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/initials3"
+                            android:scaleType="center"/>
+                </LinearLayout>
+                <TextView
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Choose your Monogram Color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <GridView
+                    android:layout_marginTop="10dp"
+                    android:columnWidth="80dp"
+                    android:paddingTop="10dp"
+                    android:scrollbars="horizontal"
+                    android:numColumns="4"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/gridview"
+                    android:horizontalSpacing="0dp"
+                    android:verticalSpacing="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></GridView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/bottomLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp" android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_horizontal"
+                    android:text="+ $5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="APPLY"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/saveButton"
+                    android:textColor="@android:color/black"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="300dp"
+                    android:textStyle="bold"
+                    android:layout_height="60dp" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

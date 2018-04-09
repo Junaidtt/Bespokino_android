@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linearThread"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:src="@drawable/a"
+    android:id="@+id/thread"
+    android:layout_margin="5dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp" />
+
+        <ImageView
+            android:layout_gravity="end"
+            android:id="@+id/ticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tick" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

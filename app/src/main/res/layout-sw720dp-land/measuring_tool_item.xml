@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    android:layout_margin="4dp"
+    card_view:contentPadding="0dp">
+    <LinearLayout
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:paddingTop="15dp"
+            android:src="@drawable/neck4"
+            android:id="@+id/colorCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+            <ImageView
+                android:layout_gravity="end"
+                android:id="@+id/ticker"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.app.bespokino.activity.PaymentActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:id="@+id/headerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="A $20 deposit is required for your self-measuring tool
+The deposit will be applied to your first order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="FIRSTNAME"
+                android:id="@+id/edFirstName"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionGo"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="LASTNAME"
+                android:id="@+id/edLastName"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="ADDRESS"
+                android:id="@+id/edAddress"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="CITY"
+                android:id="@+id/edCity"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="STATE"
+                android:id="@+id/edState"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="ZIPCODE"
+                android:id="@+id/edZipcode"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="COUNTRY"
+                android:id="@+id/edCountry"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="EMAIL"
+                android:id="@+id/edEmail"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="CELL NUMBER"
+                android:id="@+id/edPhonenumber"
+                android:inputType="number"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="CARD TYPE"
+                android:id="@+id/edCardType"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="CREDIT CARD NUMBER"
+                android:id="@+id/edCreditCardNumber"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="EX MONTH"
+                android:id="@+id/edExMonth"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="EX YEAR"
+                android:id="@+id/edExYear"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:hint="CSV"
+                android:id="@+id/edExCSV"
+                android:background="@drawable/ed_border"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="SUBMIT"
+            android:background="@android:color/black"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

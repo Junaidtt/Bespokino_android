@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.app.bespokino.activity.SizeAdjustentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="create a Standerd size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="Your T.A.P.E sizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="Use '+ '-' buttons to make adjustments "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="SHIRT NECK"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/ed_border"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onMinus"
+
+                />
+            <EditText
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text="17.7"
+                android:id="@+id/edSize"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onPlus"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="SHOULDERS"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/ed_border"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onShoulderMinus"
+
+                />
+            <EditText
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text="13.5"
+                android:id="@+id/edShoulder"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onShoulderPlus"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="CHEST"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/ed_border"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onChestMinus"
+
+                />
+            <EditText
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text="40.9"
+                android:id="@+id/edChest"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onChestPlus"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="WAIST"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/ed_border"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onWaistMinus"
+
+                />
+            <EditText
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text="37"
+                android:id="@+id/edWaist"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onWaistPlus"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="SLEEVE"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/ed_border"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onSleeveMinus"
+
+                />
+            <EditText
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:text="34.4"
+                android:id="@+id/edSleeve"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+            <ImageButton
+                android:background="@drawable/ed_border"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:onClick="onSleevePlus"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:elevation="4dp"
+        android:id="@+id/saveButton"
+        android:textColor="@android:color/white"
+        android:text="SAVE"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="A $20 deposit is required for your self-measuring tool The deposit will be applied to your first order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="FIRST NAME"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="LAST NAME"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edFirstName"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/edLastName"
+            android:layout_weight="1"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="ADDRESS"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="CITY"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edAddress"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/edCity"
+                android:layout_weight="1"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="STATE"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="ZIPCODE"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="COUNTRY"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edState"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="text"
+                android:id="@+id/edZipcode"
+                android:layout_weight="1"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/edCountry"
+                android:layout_weight="1"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="EMAIL"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="CELL NUMBER"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edCellNumber"
+                android:layout_weight="1"
+                android:background="@drawable/ed_border"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/payTwentyButton"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:text="PAY $20"
+                android:background="@android:color/black"
+                android:layout_width="200dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

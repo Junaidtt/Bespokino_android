@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Fullname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:id="@+id/edFullName"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Street address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edStreetAddress"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="City"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="State"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edCity"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <EditText
+            android:paddingLeft="5dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:id="@+id/edState"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Zip code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Suite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:id="@+id/edZipcode"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <EditText
+            android:paddingLeft="5dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:id="@+id/edCountry"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ed_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/continueButton"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:text="Continue Payment"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="8dp"
+    card_view:contentPadding="0dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:src="@drawable/collar_a"
+            android:id="@+id/collar"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:scaleType="fitCenter"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="NORMAL"
+        android:textSize="20sp"
+        android:id="@+id/tv_collar_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:paddingBottom="2dp"
+        android:layout_gravity="bottom"
+        android:textColor="@android:color/black"
+        />
+</LinearLayout>
+        <ImageView
+
+            android:src="@drawable/tick1"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:adjustViewBounds="true"
+            android:paddingTop="-20dp"
+            android:scaleType="fitStart"
+            android:id="@+id/checked_item" />
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

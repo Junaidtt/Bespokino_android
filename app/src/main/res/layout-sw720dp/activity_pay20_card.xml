@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_margin="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:text="DEPOSIT"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:text="A $20 deposit is required for your self-measuring tool.
+The deposit will be applied to your first order"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="FIRST NAME"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textAllCaps="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_border"
+                    android:id="@+id/edFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:layout_marginRight="2dp"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="EMAIL"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="CELL NUMBER"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_border"
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:background="@drawable/ed_border"
+                    android:layout_weight="1"
+                    android:id="@+id/edCellNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:maxLength="14"
+                    android:digits="0123456789+"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="5dp"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="ADDRESS"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="CITY"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <AutoCompleteTextView
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_border"
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionDone"
+                    android:maxLines="5"
+                    android:paddingLeft="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Find your address here"/>
+               <!-- <EditText
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_border"
+                    android:id="@+id/edAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    />-->
+                <EditText
+                    android:background="@drawable/ed_border"
+                    android:layout_weight="1"
+                    android:id="@+id/edCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="STATE"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="ZIPCODE"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--<TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="COUNTRY"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_border"
+                    android:id="@+id/edState"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPersonName"
+                    />
+                <EditText
+                    android:background="@drawable/ed_border"
+                    android:layout_weight="1"
+                    android:id="@+id/edZipcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="5dp"
+                    android:inputType="textPostalAddress" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:paddingTop="12dp"
+                    android:text="CREDIT CARD NUMBER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <morxander.editcard.EditCard
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:digits="0123456789+"
+                    android:inputType="number"
+                    android:nextFocusForward="@+id/date_month_view"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/ed_border"
+                    android:id="@+id/card_number_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:text="Expiration month"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:textAllCaps="true"
+                    android:text="Expiration YEAR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:text="CVV ?"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:nextFocusDown="@+id/zip_code_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:id="@+id/date_month_view"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/date_year_view"
+                    android:background="@drawable/ed_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:id="@+id/date_year_view"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusForward="@+id/security_code_view"
+                    android:background="@drawable/ed_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+                <EditText
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@+id/nameOnthecard"
+                    android:id="@+id/security_code_view"
+                    android:layout_weight="1"
+                    android:background="@drawable/ed_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/termsAndConditionLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/acceptCheckBox"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="CheckBox" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/termsAndConditionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:gravity="start"
+                        android:layout_marginTop="5dp"
+                        android:text="AGREE TO OUR TERMS AND CONDITION"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:gravity="end"
+                        android:text="I agree that i have read and accepted our terms and conditions for your purchase "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/button_checkout_order"
+                android:textColor="@android:color/white"
+                android:text="SEND ME MEASURING TOOL"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+
+        </LinearLayout>
+    </ScrollView></android.support.v7.widget.CardView>
+</LinearLayout>

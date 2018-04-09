@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.app.bespokino.activity.MeasuringToolActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/ed_border"
+                android:entries="@array/height"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:text="SELECT YOUR PRFFERED FIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layoutSlim"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="SLIM FIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageButton
+         android:background="@android:color/transparent"
+         android:scaleType="fitCenter"
+         android:id="@+id/imgSlim"
+         android:layout_weight="1"
+         android:src="@drawable/slim_fit"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+            </LinearLayout>
+                <ImageView
+                    android:id="@+id/tick"
+                    android:paddingEnd="10dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/tick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/layoutCasual"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:text="CASUAL FIT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/imgCasual"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/casual_fit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/ticker"
+                    android:paddingEnd="10dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/tick"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:id="@+id/slimModelNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:id="@+id/casualModelNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btSendMetool"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="Send Me Measuring tool"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@android:color/black"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btToolPresent"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="Measuring tool present"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

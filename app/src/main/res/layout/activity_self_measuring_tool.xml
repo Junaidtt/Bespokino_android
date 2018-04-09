@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/appBar"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <!-- <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="SELF MEASURING TOOL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:background="@color/grayWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:prompt="@string/country_prompt"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ed_border"
+                        android:entries="@array/model"
+                        android:overlapAnchor="false"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp"></ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_margin= "20dp"
+            android:id="@+id/nextButton"
+            android:layout_marginRight="10dp"
+            android:text="GET STARTED"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

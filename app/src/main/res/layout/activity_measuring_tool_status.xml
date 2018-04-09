@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.bespokino.activity.MeasuringToolStatus">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="BESPOKINO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbar_title"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layoutSlim"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:text="SEND MEASURING TOOL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/btSend"
+                        android:layout_weight="1"
+                        android:src="@drawable/send_me_tool"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:id="@+id/slimModelNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:src="@drawable/tick"
+                    android:id="@+id/tick"
+                    android:paddingEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutCasual"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:text="MEASURNIG TOOL PRESENT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageButton
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/btPresnt"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tool_present"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:src="@drawable/tick"
+                    android:id="@+id/ticker"
+                    android:paddingEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

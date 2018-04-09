@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group
+        android:id="@+id/group_home"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@android:color/black"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="HOME" />
+    </group>
+    <group
+        android:id="@+id/about_us"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/info"
+            android:id="@+id/nav_how_it_works"
+            android:title="ABOUT US" />
+    </group>
+    <group
+        android:id="@+id/rateme_grp"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/ordering"
+            android:id="@+id/nav_login"
+            android:title="RATE ME" />
+
+    </group>
+    <group
+        android:id="@+id/profile"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/measure"
+            android:id="@+id/nav_tool"
+            android:title="BESPOKE PROFILE" />
+
+    </group>
+
+    <group
+        android:id="@+id/logout_grp"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/logout"
+            android:id="@+id/logout_tool"
+            android:title="LOGOUT" />
+
+    </group>
+</menu>

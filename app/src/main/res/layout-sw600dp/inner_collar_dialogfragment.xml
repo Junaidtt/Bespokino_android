@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:text="SELECT YOUR CONTRAST FABRIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:id="@+id/btSolid"
+                android:text="SOLID"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <Button
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:id="@+id/btFancy"
+                android:text="FANCY"
+                android:textStyle="bold"
+                android:textAlignment="viewStart"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <GridView
+            android:scrollbars="horizontal"
+            android:numColumns="4"
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></GridView>
+            <GridView
+                android:scrollbars="horizontal"
+                android:numColumns="4"
+                android:id="@+id/gridview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></GridView>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/btCancel"
+            android:text="CANCEL"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

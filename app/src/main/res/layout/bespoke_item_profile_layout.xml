@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/white"
+    android:paddingBottom="4dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:id="@+id/bdTvItem"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="TextView" />
+    <LinearLayout
+        android:gravity="center"
+        android:background="@android:color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/bodyItemImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/abdomen_normal" /></LinearLayout>
+</RelativeLayout>

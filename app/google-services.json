@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "18660756230",
+    "firebase_url": "https://bespokino-172915.firebaseio.com",
+    "project_id": "bespokino-172915",
+    "storage_bucket": "bespokino-172915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18660756230:android:bd466d48571ab454",
+        "android_client_info": {
+          "package_name": "com.app.bespokino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18660756230-2ucld46tj53mlnrsqj9itf0tvdgae77u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bespokino",
+            "certificate_hash": "325250806b3631760760f561750d4282337a8d83"
+          }
+        },
+        {
+          "client_id": "18660756230-s5f0q9bvdqsmmfcclaoj13rk51bsfj1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bespokino",
+            "certificate_hash": "74f35cdc7f3d256f80270bb7e66e1cb7b865ab0a"
+          }
+        },
+        {
+          "client_id": "18660756230-b522hnvcbrdq6na13o49fftgkfuj3ons.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "18660756230-va7al9kdk2l5ubsir4ia2ut0bifmr97a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bespokino",
+            "certificate_hash": "1944857ce2553da5e21c06d19945d760a0be580c"
+          }
+        },
+        {
+          "client_id": "18660756230-k4shted4282auhjcsfe73s5cl85mig65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOxkb8Pr1-swuTKu1U3B5ojFDJtkCbSDQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
